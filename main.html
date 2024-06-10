@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza KMA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PIZZA KMA</div>
+        <div class="contacts">
+            <span>(044) 222 5 222</span>
+            <span>24 години/ 7 днів на тиждень</span>
+            <span>Безкоштовна доставка піци</span>
+        </div>
+        <button class="login-btn">Ввійти</button>
+    </header>
+    <main>
+        <aside class="banner">
+            <span>Цього тижня на все</span>
+            <span>-20%</span>
+        </aside>
+        <section class="pizzas">
+            <h1>Усі піци</h1>
+            <div class="filters">
+                <button data-filter="all">Усі</button>
+                <button data-filter="meat">М'ясні</button>
+                <button data-filter="pineapple">З ананасами</button>
+                <button data-filter="mushroom">З грибами</button>
+                <button data-filter="seafood">З морепродуктами</button>
+                <button data-filter="vega">Вега</button>
+            </div>
+            <div class="pizza-list" id="pizza-list"></div>
+        </section>
+        <aside class="cart">
+            <h2>Замовлення</h2>
+            <ul class="cart-items" id="cart-items"></ul>
+            <div class="total">
+                <span>Сума замовлення</span>
+                <span id="total-price">0 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+            <button class="clear-cart-btn">Очистити замовлення</button>
+        </aside>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

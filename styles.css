@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contacts span {
+    display: block;
+}
+
+.login-btn {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.banner {
+    width: 20%;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.pizzas {
+    width: 60%;
+}
+
+.pizzas h1 {
+    margin-top: 0;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters button {
+    background-color: #eee;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pizza-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pizza-item {
+    width: 30%;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.pizza-item img {
+    width: 100%;
+}
+
+.pizza-item h2 {
+    margin-top: 0;
+}
+
+.sizes, .prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-btn {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cart {
+    width: 20%;
+    padding: 10px;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.order-btn, .clear-cart-btn {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .pizza-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .banner, .cart {
+        width: 100%;
+    }
+
+    .pizzas {
+        width: 100%;
+    }
+
+    .pizza-item {
+        width: 100%;
+    }
+}
