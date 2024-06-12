@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +7,135 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">PIZZA KMA</div>
-        <div class="contacts">
-            <span>(044) 222 5 222</span>
-            <span>24 години/ 7 днів на тиждень</span>
-            <span>Безкоштовна доставка піци</span>
+    <div class="left-half">
+        <header>
+            <div class="logo">
+                <span class="logo-text">PIZZA KMA</span>
+            </div>
+            <div class="header-right">
+                <div class="top-info-block">
+                    <span class="phone">(044) 222 5 222</span>
+                    <span class="working-hours">24 години/7 днів на тиждень</span>
+                    <span class="delivery">Безкоштовна доставка піци</span>
+                    <button class="login-btn">Ввійти</button>
+                </div>
+                <hr class="header-separate-line">
+                <span>Піца</span>
+            </div>
+        </header>
+        <main>
+            <section class="pizzas">
+                <h1>
+                    Усі піци
+                    <span>
+                        8
+                    </span>
+                </h1>
+                <div class="filter-buttons">
+                    <button class="select-btn active">Усі</button>
+                    <button class="select-btn">М'ясні</button>
+                    <button class="select-btn">З ананасами</button>
+                    <button class="select-btn">З грибами</button>
+                    <button class="select-btn">З морепродуктами</button>
+                    <button class="select-btn">Вега</button>
+                </div>
+                
+                <div class="pizza-list">
+                    <div class="pizza">
+                        <img src="https://origami.lviv.ua/image/vmmcrksfcd/impreza-small.jpg" alt="Піца Імпреза">
+                        <h2>Імпреза</h2>
+                        <p>Балик, салямі, курка, сир моцарелла, сир рокфор, ананас, томатна паста, петрушка</p>
+                        <div class="sizes">
+                            <button>99 грн</button>
+                            <button>169 грн</button>
+                        </div>
+                    </div>
+                    <div class="pizza">
+                        <img src="https://www.pizzacity.dp.ua/wp-content/uploads/2020/12/BBQ.png" alt="Піца BBQ">
+                        <h2>BBQ</h2>
+                        <p>Мисливські ковбаски, ковбаски папероні, шинка, сир домашній, шампіньйони, петрушка, оливки</p>
+                        <div class="sizes">
+                            <button>139 грн</button>
+                            <button>199 грн</button>
+                        </div>
+                    </div>
+                    <div class="pizza">
+                        <img src="https://img.postershop.me/2859/Products/1367417_1614118924.1881_original.jpeg" alt="Піца Міксовий поло">
+                        <h2>Міксовий поло</h2>
+                        <p>Шинка, курка копчена, сир моцарелла, ананас, кукурудза, петрушка, соус томатний</p>
+                        <div class="sizes">
+                            <button>115 грн</button>
+                            <button>179 грн</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div class="order-summary">
+        <div class="header">
+          <h1>Замовлення <span class="order-count">3</span></h1>
+          <a href="#" class="clear-order">Очистити</a>
         </div>
-        <button class="login-btn">Ввійти</button>
-    </header>
-    <main>
-        <aside class="banner">
-            <span>Цього тижня на все</span>
-            <span>-20%</span>
-        </aside>
-        <section class="pizzas">
-            <h1>Усі піци</h1>
-            <div class="filters">
-                <button data-filter="all">Усі</button>
-                <button data-filter="meat">М'ясні</button>
-                <button data-filter="pineapple">З ананасами</button>
-                <button data-filter="mushroom">З грибами</button>
-                <button data-filter="seafood">З морепродуктами</button>
-                <button data-filter="vega">Вега</button>
-            </div>
-            <div class="pizza-list" id="pizza-list"></div>
-        </section>
-        <aside class="cart">
-            <h2>Замовлення</h2>
-            <ul class="cart-items" id="cart-items"></ul>
-            <div class="total">
-                <span>Сума замовлення</span>
-                <span id="total-price">0 грн</span>
-            </div>
-            <button class="order-btn">Замовити</button>
-            <button class="clear-cart-btn">Очистити замовлення</button>
-        </aside>
-    </main>
-    <script src="scripts.js"></script>
+        
+        <div class="order-item">
+          <div class="item-details">
+            <h2>BBQ (Мала)</h2>
+            <p class="icons">Ø 30 <span>⚖️ 460</span></p>
+            <div class="item-quantity">
+                <p class="price">556грн</p>
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">4</span>
+                <button class="quantity-btn plus">+</button>
+                <button class="remove-item">✖</button>
+              </div>
+          </div>
+          <img src="https://origami.lviv.ua/image/vmmcrksfcd/impreza-small.jpg" alt="Pizza" class="item-image">
+        </div>
+    
+        <div class="order-item">
+          <div class="item-details">
+            <h2>Россо Густо (Мала)</h2>
+            <p class="icons">Ø 30 <span>⚖️ 400</span></p>
+            <div class="item-quantity">
+                <p class="price">189грн</p>
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+                <button class="remove-item">✖</button>
+              </div>
+          </div>
+          <img src="https://www.pizzacity.dp.ua/wp-content/uploads/2020/12/BBQ.png" alt="Pizza" class="item-image">
+        </div>
+    
+        <div class="order-item">
+          <div class="item-details">
+            <h2>Міксовий поло (Велика)</h2>
+            <p class="icons">Ø 40 <span>⚖️ 780</span></p>
+            <div class="item-quantity">
+                <p class="price">179грн</p>
+                <button class="quantity-btn minus">-</button>
+                <span class="quantity">1</span>
+                <button class="quantity-btn plus">+</button>
+                <button class="remove-item">✖</button>
+              </div>
+          </div>
+          <img src="https://img.postershop.me/2859/Products/1367417_1614118924.1881_original.jpeg" alt="Pizza" class="item-image">
+        </div>
+    
+        <div class="order-total">
+          <p>Сума замовлення <span class="total-price">924 грн</span></p>
+          <button class="order-btn">Замовити</button>
+        </div>
+      </div>
+
+      <div class="promo-banner">
+        <span class="promo-banner-text">Цього тижня на все</span>
+        <hr class="promo-banner-line">
+        <span class="promo-banner-text">-20%</span>
+      </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
