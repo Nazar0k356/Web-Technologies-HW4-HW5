@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Імпреза",
+        "image": "https://origami.lviv.ua/image/vmmcrksfcd/impreza-small.jpg",
+        "description": "Балик, салямі, курка, сир моцарелла, сир рокфор, ананас, томатна паста, петрушка",
+        "category": ["meat", "pineapple"],
+        "sizes": [
+            { "diameter": 30, "weight": 370, "price": 99 },
+            { "diameter": 40, "weight": 660, "price": 169 }
+        ]
+    },
+    {
+        "name": "BBQ",
+        "image": "https://www.pizzacity.dp.ua/wp-content/uploads/2020/12/BBQ.png",
+        "description": "Мисливські ковбаски, ковбаски папероні, шинка, сир домашній, шампіньйони, петрушка, оливки",
+        "category": ["meat", "mushroom"],
+        "sizes": [
+            { "diameter": 30, "weight": 460, "price": 139 },
+            { "diameter": 40, "weight": 840, "price": 199 }
+        ]
+    },
+    {
+        "name": "Міксовий поло",
+        "image": "https://img.postershop.me/2859/Products/1367417_1614118924.1881_original.jpeg",
+        "description": "Шинка, курка копчена, сир моцарелла, ананас, кукурудза, петрушка, соус томатний",
+        "category": ["meat", "pineapple"],
+        "sizes": [
+            { "diameter": 30, "weight": 430, "price": 115 },
+            { "diameter": 40, "weight": 780, "price": 139 }
+        ]
+    },
+    {
+        "name": "Маргарита",
+        "image": "https://grigliata.com.ua/wp-content/uploads/2023/04/Margarita.jpg",
+        "description": "Сир моцарелла, соус томатний, орегано, базилік",
+        "category": ["vegetarian"],
+        "sizes": [
+            { "diameter": 30, "weight": 400, "price": 90 },
+            { "diameter": 40, "weight": 700, "price": 120 }
+        ]
+    },
+    {
+        "name": "Супер м'ясна",
+        "image": "https://filetto.kiev.ua/wp-content/uploads/2021/02/Pitsa-super-miasna-z-saliami-ta-bekonom.webp",
+        "description": "Шинка, ковбаски, бекон, салямі, сир моцарелла, соус барбекю",
+        "category": ["meat"],
+        "sizes": [
+            { "diameter": 30, "weight": 450, "price": 130 },
+            { "diameter": 40, "weight": 850, "price": 165 }
+        ]
+    },
+    {
+        "name": "Чотири сири",
+        "image": "https://images.pizza33.ua/products/product/8CIgcf77NzAQfLmhNisp2DyHVqvGiZ93.png",
+        "description": "Сир моцарелла, сир дорблю, сир пармезан, сир чеддер, соус вершковий",
+        "category": ["vegetarian", "cheese"],
+        "sizes": [
+            { "diameter": 30, "weight": 420, "price": 140 },
+            { "diameter": 40, "weight": 760, "price": 180 }
+        ]
+    },
+    {
+        "name": "Гавайська",
+        "image": "https://adriano.com.ua/wp-content/uploads/2022/08/%D0%93%D0%B0%D0%B2%D0%B0%D0%B8%CC%86%D1%81%D1%8C%D0%BA%D0%B0.jpeg",
+        "description": "Курка, ананас, сир моцарелла, кукурудза, соус томатний",
+        "category": ["meat", "pineapple"],
+        "sizes": [
+            { "diameter": 30, "weight": 410, "price": 110 },
+            { "diameter": 40, "weight": 750, "price": 145 }
+        ]
+    }
+]

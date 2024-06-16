@@ -163,7 +163,7 @@ main {
 
 .promo-banner-text{
     font-size: 14px;
-    display: block; /* або inline-block */
+    display: block; 
     line-height: 20 px;
 }
 
@@ -238,11 +238,19 @@ main {
 }
 
 .pizza-list {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 
+@media(max-width:720px){
+    .pizza-list{
+        justify-content: left;
+    }
+}
+
 .pizza {
+    position: relative;
     width: 30%;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -253,25 +261,57 @@ main {
     max-width: 250px;
 }
 
+.new:after {
+    content: "Нова";
+    position: absolute;
+    top: -2%;
+    right: -5%;
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.popular:after {
+    content: "Популярна";
+    position: absolute;
+    top: -2%;
+    right: -5%;
+    background-color: #23b127;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+}
+
 .pizza img {
+    height:50%;
     width: 100%;
-    height: auto;
 }
 
 .pizza h2 {
+    height: 5%;
     color:#ff9800;
     font-size: 24px;
     margin: 10px 0;
 }
 
 .pizza p {
+    height:10%;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
 .size-choice{
     display: flex;
+    height: 30%;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 .size-1, .size-2 {
@@ -308,7 +348,7 @@ main {
     cursor: pointer;
 }
 
-.order-summary {
+.cart {
     position: fixed;
     height:100%;
     width: 25%;
@@ -319,7 +359,7 @@ main {
     min-width: 300px;
 }
 
-.header {
+.cart-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -328,12 +368,12 @@ main {
     border-bottom: 1px solid #ddd;
 }
 
-.header h1 {
+.cart-header h1 {
     margin: 0;
     font-size: 16px;
 }
 
-.header .order-count {
+.cart-header .order-count {
     background-color: #ff8c00;
     color: white;
     border-radius: 50%;
@@ -341,9 +381,11 @@ main {
     margin-left: 10px;
 }
 
-.header .clear-order {
+.cart-header .clear-cart-btn {
     color: #888;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 .order-item {
@@ -374,16 +416,29 @@ main {
     color: #888;
 }
 
-.item-details .price {
+.item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-quantity .price {
+    width:30%;
     margin: 0;
     font-size: 16px;
     font-weight: bold;
 }
 
-.item-quantity {
+.item-quantity .quantity-control {
+    width:70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.quantity{
+    width: 15%;
+    text-align: center;
 }
 
 .item-quantity button{
