@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalPriceElement = document.querySelector('.total-price');
     const orderCountElement = document.querySelector('.order-count');
     const clearCartBtn = document.querySelector('.clear-cart-btn');
+    const statsButton = document.querySelector('.stats-btn');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let pizzas = [];
 
@@ -129,6 +130,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cart = [];
         updateCart();
         saveCart();
+    });
+
+    statsButton.addEventListener('click', () => {
+        saveCart();
+        window.location.href = 'table.html';
     });
 
     document.querySelectorAll('.filter-buttons button').forEach(button => {
